@@ -1,0 +1,159 @@
+.wrapper {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+.container {
+  height: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  aspect-ratio: 2/1;
+}
+
+.card {
+  /* width: 80px; */
+  width: 6rem;
+  border-radius: 0.75rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card > .row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+  background: #223;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.card > .row > .description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 80px;
+  width: 520px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: 0.3s;
+  transition: all 0.3s ease;
+}
+
+.description p {
+  color: #b0b0ba;
+  padding-top: 5px;
+}
+
+.description h4 {
+  text-transform: uppercase;
+}
+
+.inputField {
+  display: none;
+}
+
+.inputField:checked + label {
+  width: 600px;
+  cursor: grabbing;
+}
+
+.inputField:checked + label .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+  background-image: url("../assets/images/project_1.jpeg");
+  background: rgba(0, 0, 0, 0.5); 
+
+}
+.card[for="c2"] {
+  background-image: url("../assets/images/project_2.jpg");
+  ;
+}
+.card[for="c3"] {
+  background-image: url("../assets/images/project_3.jpg");
+}
+.card[for="c4"] {
+  background-image: url("../assets/images/project_4.jpg");
+}
+
+/* Existing styles */
+
+/* Add the following at the end for responsiveness */
+@media (max-width: 786px) {
+  .container {
+    width: 80%;
+    aspect-ratio: 1/2;
+    max-width: 100%;
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: center; /* Center cards horizontally */
+    height: auto; /* Allow container height to adjust based on content */
+    /* overflow-x:hidden ; */
+  }
+
+  .card {
+    width: 95%; /* Make cards take full width on smaller screens */
+    margin: 10px 0; /* Add some spacing between cards */
+    transition: height 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+    box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.8); /* Adjusted box shadow for smaller screens */
+    overflow: visible;
+    transition: height 1s ease; /* Adjusted the transition property */ /* Change the transition to height */
+    height: auto; /* Allow card height to adjust based on content */
+
+  }
+
+  .card > .row {
+    padding: 1rem;
+    align-items: center; /* Center row content horizontally */
+  }
+
+  .card > .row > .icon {
+    width: 50px; /* Adjust the width of the icon */
+    height: 50px;
+    margin: 0; /* Ensure the icon remains a circle */
+    position: relative;
+  }
+
+  .card > .row > .description {
+    width: 100%; /* Make the description take full width */
+    height: auto; /* Allow description height to adjust based on content */
+    margin-left: 1rem;
+  }
+
+  .inputField:checked + label {
+    width: 100%; /* Full width for checked label on smaller screens */
+    height: 400px;
+    cursor: grabbing;
+    transition: height 1s cubic-bezier(0.28, -0.03, 0, 0.99);
+    transition: height 1s ease;
+  }
+
+  .card[for="c1"],
+  .card[for="c2"],
+  .card[for="c3"],
+  .card[for="c4"] {
+    background-size: cover;
+  }
+}

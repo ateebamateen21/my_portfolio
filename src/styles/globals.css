@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom styles */
+
+.container {
+    margin: 0 auto;
+  /* Extra Small (xs) */
+  @media only screen and (max-width: 599px) {
+    width: 100%;
+   
+    /* background-color: red; */
+  }
+
+  /* Small (sm) */
+  @media only screen and (min-width: 600px) and (max-width: 899px) {
+    width: 100%;
+  
+    /* background-color: blue; */
+  }
+
+  /* Medium (md) */
+  @media only screen and (min-width: 900px) and (max-width: 1199px) {
+    width: 80%;
+
+    /* background-color: green; */
+  }
+
+  /* Large (lg) */
+  @media only screen and (min-width: 1200px) {
+    width: 75%;
+
+    /* background-color: yellow; */
+  }
+}
+
+ body{
+    color: #ffffff;
+    overflow-x: hidden;
+}
+.landing {
+  background-color: aqua;
+  background-image: url("../assets/images/landing_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about{
+    background-color: aqua;
+    background-image: url("../assets/images/about_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.github{
+    background-color: aqua;
+    background-image: url("../assets/images/landing_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.projects{
+    background-color: aqua;
+    background-image: url("../assets/images/projects_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
