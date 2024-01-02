@@ -1,0 +1,46 @@
+import React from "react";
+import "../../styles/globals.css";
+import styles from "../../styles/projects.module.css";
+
+const Projects = () => {
+  return (
+    <>
+      <div className="projects ">
+        <section className="container py-12">
+          <div className="py-10 ">
+            <h1 className="text-3xl font-bold text-center">Projects</h1>
+          </div>
+          <div className={styles.wrapper}>
+            <div className={styles.container}>
+              <input
+                type="radio"
+                name="slide"
+                id="c1"
+                defaultChecked
+                className={styles.inputField}
+              />
+              <label htmlFor="c1" className={styles.card}>
+                <div className={styles.row}>
+                  <div className={styles.icon}>1</div>
+                  <div className={styles.description}>
+                    <h4>Winter</h4>
+                    <p>Winter has so much to offer - creative activities</p>
+                  </div>
+                </div>
+              </label>
+              <input
+                type="radio"
+                name="slide"
+                id="c2"
+                className={styles.inputField}
+              />
+              <label htmlFor="c2" className={styles.card}>
+                <div className={styles.row}>
+                  <div className={styles.icon}>2</div>
+                  <div className={styles.description}>
+                    <h4>Digital Technology</h4>
+                    <p>Gets better every day - stay tuned</p>
+                  </div>
+                </div>
+              </label>
+    

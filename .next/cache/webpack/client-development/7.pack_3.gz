@@ -1,0 +1,134 @@
+perativeHandle is not run in the server environment
+  useImperativeHandle: noop$1,
+  // Effects are not run in the server environment.
+  useEffect: noop$1,
+  // Debugging effect
+  useDebugValue: noop$1,
+  useDeferredValue: useDeferredValue,
+  useTransition: useTransition,
+  useId: useId,
+  // Subscriptions are not setup in a server environment.
+  useSyncExternalStore: useSyncExternalStore
+};
+
+{
+  HooksDispatcher.useCacheRefresh = useCacheRefresh;
+}
+
+{
+  HooksDispatcher.useEffectEvent = useEffectEvent;
+}
+
+{
+  HooksDispatcher.useMemoCache = useMemoCache;
+}
+
+{
+  HooksDispatcher.useHostTransitionStatus = useHostTransitionStatus;
+}
+
+{
+  HooksDispatcher.useOptimistic = useOptimistic;
+  HooksDispatcher.useFormState = useFormState;
+}
+
+var currentResumableState = null;
+function setCurrentResumableState(resumableState) {
+  currentResumableState = resumableState;
+}
+
+function getCacheSignal() {
+  throw new Error('Not implemented.');
+}
+
+function getCacheForType(resourceType) {
+  throw new Error('Not implemented.');
+}
+
+var DefaultCacheDispatcher = {
+  getCacheSignal: getCacheSignal,
+  getCacheForType: getCacheForType
+};
+
+function getStackByComponentStackNode(componentStack) {
+  try {
+    var info = '';
+    var node = componentStack;
+
+    do {
+      switch (node.tag) {
+        case 0:
+          info += describeBuiltInComponentFrame(node.type, null, null);
+          break;
+
+        case 1:
+          info += describeFunctionComponentFrame(node.type, null, null);
+          break;
+
+        case 2:
+          info += describeClassComponentFrame(node.type, null, null);
+          break;
+      } // $FlowFixMe[incompatible-type] we bail out when we get a null
+
+
+      node = node.parent;
+    } while (node);
+
+    return info;
+  } catch (x) {
+    return '\nError generating stack: ' + x.message + '\n' + x.stack;
+  }
+}
+
+var ReactCurrentDispatcher = ReactSharedInternals.ReactCurrentDispatcher;
+var ReactCurrentCache = ReactSharedInternals.ReactCurrentCache;
+var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame; // Linked list representing the identity of a component given the component/tag name and key.
+// The name might be minified but we assume that it's going to be the same generated name. Typically
+// because it's just the same compiled output in practice.
+// resume with segmentID at the index
+
+var CLIENT_RENDERED = 4; // if it errors or infinitely suspends
+
+var PENDING = 0;
+var COMPLETED = 1;
+var FLUSHED = 2;
+var ABORTED = 3;
+var ERRORED = 4;
+var POSTPONED = 5;
+var OPEN = 0;
+var CLOSING = 1;
+var CLOSED = 2; // This is a default heuristic for how to split up the HTML content into progressive
+// loading. Our goal is to be able to display additional new content about every 500ms.
+// Faster than that is unnecessary and should be throttled on the client. It also
+// adds unnecessary overhead to do more splits. We don't know if it's a higher or lower
+// end device but higher end suffer less from the overhead than lower end does from
+// not getting small enough pieces. We error on the side of low end.
+// We base this on low end 3G speeds which is about 500kbits per second. We assume
+// that there can be a reasonable drop off from max bandwidth which leaves you with
+// as little as 80%. We can receive half of that each 500ms - at best. In practice,
+// a little bandwidth is lost to processing and contention - e.g. CSS and images that
+// are downloaded along with the main content. So we estimate about half of that to be
+// the lower end throughput. In other words, we expect that you can at least show
+// about 12.5kb of content per 500ms. Not counting starting latency for the first
+// paint.
+// 500 * 1024 / 8 * .8 * 0.5 / 2
+
+var DEFAULT_PROGRESSIVE_CHUNK_SIZE = 12800;
+
+function defaultErrorHandler(error) {
+  console['error'](error); // Don't transform to our wrapper
+
+  return null;
+}
+
+function noop() {}
+
+function createRequest(children, resumableState, renderState, rootFormatContext, progressiveChunkSize, onError, onAllReady, onShellReady, onShellError, onFatalError, onPostpone, formState) {
+  prepareHostDispatcher();
+  var pingedTasks = []able for cases
+     * where the return value of a callback needs to be applied prior to calling
+     * the next callback. See
+     * {@link workbox-strategies.StrategyHandler#iterateCallbacks}
+     * below for how to handle that case.
+     *
+     * @param {string

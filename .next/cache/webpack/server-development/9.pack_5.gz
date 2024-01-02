@@ -1,0 +1,60 @@
+XJOb2RlKGludGVybmFsSW5zdGFuY2VIYW5kbGUsIHRleHRJbnN0YW5jZSk7IC8vIFRPRE86IFRlbXBvcmFyeSBoYWNrIHRvIGNoZWNrIGlmIHdlJ3JlIGluIGEgY29uY3VycmVudCByb290LiBXZSBjYW4gZGVsZXRlXG4gIHJldHVybiBkaWZmSHlkcmF0ZWRUZXh0KHRleHRJbnN0YW5jZSwgdGV4dCk7XG59XG5mdW5jdGlvbiBoeWRyYXRlU3VzcGVuc2VJbnN0YW5jZShzdXNwZW5zZUluc3RhbmNlLCBpbnRlcm5hbEluc3RhbmNlSGFuZGxlKSB7XG4gIHByZWNhY2hlRmliZXJOb2RlKGludGVybmFsSW5zdGFuY2VIYW5kbGUsIHN1c3BlbnNlSW5zdGFuY2UpO1xufVxuZnVuY3Rpb24gZ2V0TmV4dEh5ZHJhdGFibGVJbnN0YW5jZUFmdGVyU3VzcGVuc2VJbnN0YW5jZShzdXNwZW5zZUluc3RhbmNlKSB7XG4gIHZhciBub2RlID0gc3VzcGVuc2VJbnN0YW5jZS5uZXh0U2libGluZzsgLy8gU2tpcCBwYXN0IGFsbCBub2RlcyB3aXRoaW4gdGhpcyBzdXNwZW5zZSBib3VuZGFyeS5cbiAgLy8gVGhlcmUgbWlnaHQgYmUgbmVzdGVkIG5vZGVzIHNvIHdlIG5lZWQgdG8ga2VlcCB0cmFjayBvZiBob3dcbiAgLy8gZGVlcCB3ZSBhcmUgYW5kIG9ubHkgYnJlYWsgb3V0IHdoZW4gd2UncmUgYmFjayBvbiB0b3AuXG5cbiAgdmFyIGRlcHRoID0gMDtcblxuICB3aGlsZSAobm9kZSkge1xuICAgIGlmIChub2RlLm5vZGVUeXBlID09PSBDT01NRU5UX05PREUpIHtcbiAgICAgIHZhciBkYXRhID0gbm9kZS5kYXRhO1xuXG4gICAgICBpZiAoZGF0YSA9PT0gU1VTUEVOU0VfRU5EX0RBVEEpIHtcbiAgICAgICAgaWYgKGRlcHRoID09PSAwKSB7XG4gICAgICAgICAgcmV0dXJuIGdldE5leHRIeWRyYXRhYmxlU2libGluZyhub2RlKTtcbiAgICAgICAgfSBlbHNlIHtcbiAgICAgICAgICBkZXB0aC0tO1xuICAgICAgICB9XG4gICAgICB9IGVsc2UgaWYgKGRhdGEgPT09IFNVU1BFTlNFX1NUQVJUX0RBVEEgfHwgZGF0YSA9PT0gU1VTUEVOU0VfRkFMTEJBQ0tfU1RBUlRfREFUQSB8fCBkYXRhID09PSBTVVNQRU5TRV9QRU5ESU5HX1NUQVJUX0RBVEEpIHtcbiAgICAgICAgZGVwdGgrKztcbiAgICAgIH1cbiAgICB9XG5cbiAgICBub2RlID0gbm9kZS5uZXh0U2libGluZztcbiAgfSAvLyBUT0RPOiBXYXJuLCB3ZSBkaWRuJ3QgZmluZCB0aGUgZW5kIGNvbW1lbnQgYm91bmRhcnkuXG5cblxuICByZXR1cm4gbnVsbDtcbn0gLy8gUmV0dXJucyB0aGUgU3VzcGVuc2VJbnN0YW5jZSBpZiB0aGlzIG5vZGUgaXMgYSBkaXJlY3QgY2hpbGQgb2YgYVxuLy8gU3VzcGVuc2VJbnN0YW5jZS4gSS5lLiBpZiBpdHMgcHJldmlvdXMgc2libGluZyBpcyBhIENvbW1lbnQgd2l0aFxuLy8gU1VTUEVOU0VfeF9TVEFSVF9EQVRBLiBPdGhlcndpc2UsIG51bGwuXG5cbmZ1bmN0aW9uIGdldFBhcmVudFN1c3BlbnNlSW5zdGFuY2UodGFyZ2V0SW5zdGFuY2UpIHtcbiAgdmFyIG5vZGUgPSB0YXJnZXRJbnN0YW5jZS5wcmV2aW91c1NpYmxpbmc7IC8vIFNraXAgcGFzdCBhbGwgbm9kZXMgd2l0aGluIHRoaXMgc3VzcGVuc2UgYm91bmRhcnkuXG4gIC8vIFRoZXJlIG1pZ2h0IGJlIG5lc3RlZCBub2RlcyBzbyB3ZSBuZWVkIHRvIGtlZXAgdHJhY2sgb2YgaG93XG4gIC8vIGRlZXAgd2UgYXJlIGFuZCBvbmx5IGJyZWFrIG91dCB3aGVuIHdlJ3JlIGJhY2sgb24gdG9wLlxuXG4gIHZhciBkZXB0aCA9IDA7XG5cbiAgd2hpbGUgKG5vZGUpIHtcbiAgICBpZiAobm9kZS5ub2RlVHlwZSA9PT0gQ09NTUVOVF9OT0RFKSB7XG4gICAgICB2YXIgZGF0YSA9IG5vZGUuZGF0YTtcblxuICAgICAgaWYgKGRhdGEgPT09IFNVU1BFTlNFX1NUQVJUX0RBVEEgfHwgZGF0YSA9PT0gU1VTUEVOU0VfRkFMTEJBQ0tfU1RBUlRfREFUQSB8fCBkYXRhID09PSBTVVNQRU5TRV9QRU5ESU5HX1NUQVJUX0RBVEEpIHtcbiAgICAgICAgaWYgKGRlcHRoID09PSAwKSB7XG4gICAgICAgICAgcmV0dXJuIG5vZGU7XG4gICAgICAgIH0gZWxzZSB7XG4gICAgICAgICAgZGVwdGgtLTtcbiAgICAgICAgfVxuICAgICAgfSBlbHNlIGlmIChkYXRhID09PSBTVVNQRU5TRV9FTkRfREFUQSkge1xuICAgICAgICBkZXB0aCsrO1xuICAgICAgfVxuICAgIH1cblxuICAgIG5vZGUgPSBub2RlLnByZXZpb3VzU2libGluZztcbiAgfVxuXG4gIHJldHVybiBudWxsO1xufVxuZnVuY3Rpb24gY29tbWl0SHlkcmF0ZWRDb250YWluZXIoY29udGFpbmVyKSB7XG4gIC8vIFJldHJ5IGlmIGFueSBldmVudCByZXBsYXlpbmcgd2FzIGJsb2NrZWQgb24gdGhpcy5cbiAgcmV0cnlJZkJsb2NrZWRPbihjb250YWluZXIpO1xufVxuZnVuY3Rpb24gY29tbWl0SHlkcmF0ZWRTdXNwZW5zZUluc3RhbmNlKHN1c3BlbnNlSW5zdGFuY2UpIHtcbiAgLy8gUmV0cnkgaWYgYW55IGV2ZW50IHJlcGxheWluZyB3YXMgYmxvY2tlZCBvbiB0aGlzLlxuICByZXRyeUlmQmxvY2tlZE9uKHN1c3BlbnNlSW5zdGFuY2UpO1xufVxuZnVuY3Rpb24gc2hvdWxkRGVsZXRlVW5oeWRyYXRlZFRhaWxJbnN0YW5jZXMocGFyZW50VHlwZSkge1xuICByZXR1cm4gKHBhcmVudFR5cGUgIT09ICdmb3JtJyAmJiBwYXJlbnRUeXBlICE9PSAnYnV0dG9uJyk7XG59XG5mdW5jdGlvbiBkaWROb3RNYXRjaEh5ZHJhdGVkQ29udGFpbmVyVGV4dEluc3RhbmNlKHBhcmVudENvbnRhaW5lciwgdGV4dEluc3RhbmNlLCB0ZXh0LCBpc0NvbmN1cnJlbnRNb2RlLCBzaG91bGRXYXJuRGV2KSB7XG4gIGNoZWNrRm9yVW5tYXRjaGVkVGV4dCh0ZXh0SW5zdGFuY2Uubm9kZVZhbHVlLCB0ZXh0LCBpc0NvbmN1cnJlbnRNb2RlLCBzaG91bGRXYXJuRGV2KTtcbn1cbmZ1bmN0aW9uIGRpZE5vdE1hdGNoSHlkcmF0ZWRUZXh0SW5zdGFuY2UocGFyZW50VHlwZSwgcGFyZW50UHJvcHMsIHBhcmVudEluc3RhbmNlLCB0ZXh0SW5zdGFuY2UsIHRleHQsIGlzQ29uY3VycmVudE1vZGUsIHNob3VsZFdhcm5EZXYpIHtcbiAgaWYgKHBhcmVudFByb3BzW1NVUFBSRVNTX0hZRFJBVElPTl9XQVJOSU5HXSAhPT0gdHJ1ZSkge1xuICAgIGNoZWNrRm9yVW5tYXRjaGVkVGV4dCh0ZXh0SW5zdGFuY2Uubm9kZVZhbHVlLCB0ZXh0LCBpc0NvbmN1cnJlbnRNb2RlLCBzaG91bGRXYXJuRGV2KTtcbiAgfVxufVxuZnVuY3Rpb| `31 B` (1ms 381μs) | `6.89 MB` (1s 496ms 887μs)   |
+| `{1..100000}`               | `30 B` (950μs)     | `588.89 kB` (146ms 921μs)    |
+| `{1..10000}`                | `29 B` (1ms 114μs) | `48.89 kB` (14ms 187μs)      |
+| `{1..1000}`                 | `28 B` (760μs)     | `3.89 kB` (1ms 453μs)        |
+| `{1..100}`                  | `22 B` (345μs)     | `291 B` (196μs)              |
+| `{1..10}`                   | `10 B` (533μs)     | `20 B` (37μs)                |
+| `{1..3}`                    | `7 B` (190μs)      | `5 B` (27μs)                 |
+
+### Faster algorithms
+
+When you need expansion, braces is still much faster.
+
+_(the following results were generated using `braces.expand()` and `minimatch.braceExpand()`, respectively)_
+
+| **Pattern**     | **braces**                  | **[minimatch][]**            |
+| ---             | ---                         | ---                          |
+| `{1..10000000}` | `78.89 MB` (2s 698ms 642μs) | `78.89 MB` (18s 601ms 974μs) |
+| `{1..1000000}`  | `6.89 MB` (458ms 576μs)     | `6.89 MB` (1s 491ms 621μs)   |
+| `{1..100000}`   | `588.89 kB` (20ms 728μs)    | `588.89 kB` (156ms 919μs)    |
+| `{1..10000}`    | `48.89 kB` (2ms 202μs)      | `48.89 kB` (13ms 641μs)      |
+| `{1..1000}`     | `3.89 kB` (1ms 796μs)       | `3.89 kB` (1ms 958μs)        |
+| `{1..100}`      | `291 B` (424μs)             | `291 B` (211μs)              |
+| `{1..10}`       | `20 B` (487μs)              | `20 B` (72μs)                |
+| `{1..3}`        | `5 B` (166μs)               | `5 B` (27μs)                 |
+
+If you'd like to run these comparisons yourself, see [test/support/generate.js](test/support/generate.js).
+
+## Benchmarks
+
+### Running benchmarks
+
+Install dev dependencies:
+
+```bash
+npm i -d && npm benchmark
+```
+
+### Latest results
+
+Braces is more accurate, without sacrificing performance.
+
+```bash
+# range (expanded)
+  braces x 29,040 ops/sec ±3.69% (91 runs sampled))
+  minimatch x 4,735 ops/sec ±1.28% (90 runs sampled)
+
+# range (optimized for regex)
+  braces x 382,878 ops/sec ±0.56% (94 runs sampled)
+  minimatch x 1,040 ops/sec ±0.44% (93 runs sampled)
+
+# nested ranges (expanded)
+  braces x 19,744 ops/sec ±2.27% (92 runs sampled))
+  minimatch x 4,579 ops/sec ±0.50% (93 runs sampled)
+
+# nested ranges (optimized for regex)
+  braces x 246,019 ops/sec ±2.02% (93 runs sampled)
+  minimatch x 1,028 ops/sec ±0.39% (94 runs sampled)
+
+# set (expanded) 
+  braces x 138,641 ops/sec ±0.53% (9

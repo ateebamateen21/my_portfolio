@@ -1,0 +1,31 @@
+'use strict';
+
+const { Writable } = require('stream');
+
+const { getDecoder } = require('../utils.js');
+
+class URLEncoded extends Writable {
+  constructor(cfg) {
+    const streamOpts = {
+      autoDestroy: true,
+      emitClose: true,
+      highWaterMark: (typeof cfg.highWaterMark === 'number'
+                      ? cfg.highWaterMark
+                      : undefined),
+    };
+    super(streamOpts);
+
+    let charset = (cfg.defCharset || 'utf8');
+    if (cfg.conType.params && typeof cfg.conType.params.charset === 'string')
+      charset = cfg.conType.params.charset;
+
+    this.charset = charset;
+
+    const limits = cfg.limits;
+    this.fieldSizeLimit = (limits && typeof limits.fieldSize === 'number'
+                           ? limits.fieldSize
+                           : 1 * 1024 * 1024);
+    this.fieldsLimit = (limits && typeof limits.fields === 'number'
+                        ? limits.fields
+                        : Infinity);
+    thi

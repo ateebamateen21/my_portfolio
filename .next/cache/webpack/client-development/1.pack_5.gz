@@ -1,0 +1,45 @@
+
+            }
+
+            const comments = tokens.comments;
+
+            leftToken = tokens[tokens.length - 1];
+            if (comments.length) {
+                const lastComment = comments[comments.length - 1];
+
+                if (!leftToken || lastComment.range[0] > leftToken.range[0]) {
+                    leftToken = lastComment;
+                }
+            }
+        } else {
+            leftToken = leftValue;
+        }
+
+        /*
+         * If a hashbang comment was passed as a token object from SourceCode,
+         * its type will be "Shebang" because of the way ESLint itself handles hashbangs.
+         * If a hashbang comment was passed in a string and then tokenized in this function,
+         * its type will be "Hashbang" because of the way Espree tokenizes hashbangs.
+         */
+        if (leftToken.type === "Shebang" || leftToken.type === "Hashbang") {
+            return false;
+        }
+
+        let rightToken;
+
+        if (typeof rightValue === "string") {
+            let tokens;
+
+            try {
+                tokens = espree.tokenize(rightValue, espreeOptions);
+            } catch {
+                return false;
+            }
+
+            const comments = tokens.comments;
+
+            rightToken = tokens[0];
+            if (comments.length) {
+                const firstComment = comments[0];
+
+                if (!rightToken || f
