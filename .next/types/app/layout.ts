@@ -1,4 +1,4 @@
-// File: E:\Recovered files\Recoverit 2023-12-29 at 22.16.23\Ateeba_Mateen\Web3-and-Metaverse-Q1\my_portfolio\src\app\layout.tsx
+// File: E:\Ateeba Work\Web3-and-Metaverse-Q1\my_portfolio\src\app\layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

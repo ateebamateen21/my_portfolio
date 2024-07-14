@@ -3,7 +3,7 @@
   \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /* cyrillic-ext */
 @font-face {
-  font-family: '__Inter_e66fe9';
+  font-family: '__Inter_aaf875';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -12,7 +12,7 @@
 }
 /* cyrillic */
 @font-face {
-  font-family: '__Inter_e66fe9';
+  font-family: '__Inter_aaf875';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -21,7 +21,7 @@
 }
 /* greek-ext */
 @font-face {
-  font-family: '__Inter_e66fe9';
+  font-family: '__Inter_aaf875';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -30,16 +30,16 @@
 }
 /* greek */
 @font-face {
-  font-family: '__Inter_e66fe9';
+  font-family: '__Inter_aaf875';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
   src: url(/_next/static/media/51ed15f9841b9f9d-s.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 /* vietnamese */
 @font-face {
-  font-family: '__Inter_e66fe9';
+  font-family: '__Inter_aaf875';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -48,30 +48,30 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: '__Inter_e66fe9';
+  font-family: '__Inter_aaf875';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
   src: url(/_next/static/media/d6b16ce4a6175f26-s.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: '__Inter_e66fe9';
+  font-family: '__Inter_aaf875';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
   src: url(/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {font-family: '__Inter_Fallback_e66fe9';src: local("Arial");ascent-override: 90.20%;descent-override: 22.48%;line-gap-override: 0.00%;size-adjust: 107.40%
-}.__className_e66fe9 {font-family: '__Inter_e66fe9', '__Inter_Fallback_e66fe9';font-style: normal
+}@font-face {font-family: '__Inter_Fallback_aaf875';src: local("Arial");ascent-override: 90.20%;descent-override: 22.48%;line-gap-override: 0.00%;size-adjust: 107.40%
+}.__className_aaf875 {font-family: '__Inter_aaf875', '__Inter_Fallback_aaf875';font-style: normal
 }
 
 /*!********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/styles/globals.css ***!
   \********************************************************************************************************************************************************************************************************************************************************************/
 /*
-! tailwindcss v3.4.0 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
 *//*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -251,6 +251,7 @@ textarea {
   font-size: 100%; /* 1 */
   font-weight: inherit; /* 1 */
   line-height: inherit; /* 1 */
+  letter-spacing: inherit; /* 1 */
   color: inherit; /* 1 */
   margin: 0; /* 2 */
   padding: 0; /* 3 */
@@ -271,9 +272,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
   -webkit-appearance: button; /* 1 */
   background-color: transparent; /* 2 */
   background-image: none; /* 2 */
@@ -513,6 +514,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 ::backdrop {
@@ -563,6 +568,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 .container {
   width: 100%;
@@ -865,6 +874,274 @@ video {
 
   .sm\:flex-row {
     flex-direction: row;
+  }
+}
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/styles/highlightedwork.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+.highlightedwork_wrapper__uLjgN {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+.highlightedwork_container__dn9YB {
+  height: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  aspect-ratio: 2/1;
+}
+
+.highlightedwork_card__X3YOG {
+  /* width: 80px; */
+  width: 6rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.highlightedwork_card__X3YOG > .highlightedwork_row__JEU_X {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.highlightedwork_card__X3YOG > .highlightedwork_row__JEU_X > .highlightedwork_icon__8HJ_1 {
+  background: #223;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.highlightedwork_card__X3YOG > .highlightedwork_row__JEU_X > .highlightedwork_description__70r3e {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 80px;
+  width: 520px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: 0.3s;
+  transition: all 0.3s ease;
+}
+
+.highlightedwork_description__70r3e p {
+  color: #b0b0ba;
+  padding-top: 5px;
+}
+
+.highlightedwork_description__70r3e h4 {
+  text-transform: uppercase;
+}
+
+.highlightedwork_inputField__0cR9K {
+  display: none;
+}
+
+.highlightedwork_inputField__0cR9K:checked + label {
+  width: 600px;
+  cursor: grabbing;
+}
+
+.highlightedwork_inputField__0cR9K:checked + label .highlightedwork_description__70r3e {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.highlightedwork_card__X3YOG[for="c1"] {
+  background-image: url(/_next/static/media/project_1.cf833b85.jpeg);
+  background: rgba(0, 0, 0, 0.5); 
+
+}
+.highlightedwork_card__X3YOG[for="c2"] {
+  background-image: url(/_next/static/media/project_2.49e8148f.jpg);
+  ;
+}
+.highlightedwork_card__X3YOG[for="c3"] {
+  background-image: url(/_next/static/media/project_3.80165691.jpg);
+}
+.highlightedwork_card__X3YOG[for="c4"] {
+  background-image: url(/_next/static/media/project_4.d474c811.jpg);
+}
+
+/* Existing styles */
+
+/* Add the following at the end for responsiveness */
+@media (max-width: 786px) {
+  .highlightedwork_container__dn9YB {
+    width: 80%;
+    aspect-ratio: 1/2;
+    max-width: 100%;
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: center; /* Center cards horizontally */
+    height: auto; /* Allow container height to adjust based on content */
+    /* overflow-x:hidden ; */
+  }
+
+  .highlightedwork_card__X3YOG {
+    width: 95%; /* Make cards take full width on smaller screens */
+    margin: 10px 0; /* Add some spacing between cards */
+    transition: height 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+    box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.8); /* Adjusted box shadow for smaller screens */
+    overflow: visible;
+    transition: height 1s ease; /* Adjusted the transition property */ /* Change the transition to height */
+    height: auto; /* Allow card height to adjust based on content */
+
+  }
+
+  .highlightedwork_card__X3YOG > .highlightedwork_row__JEU_X {
+    padding: 1rem;
+    align-items: center; /* Center row content horizontally */
+  }
+
+  .highlightedwork_card__X3YOG > .highlightedwork_row__JEU_X > .highlightedwork_icon__8HJ_1 {
+    width: 50px; /* Adjust the width of the icon */
+    height: 50px;
+    margin: 0; /* Ensure the icon remains a circle */
+    position: relative;
+  }
+
+  .highlightedwork_card__X3YOG > .highlightedwork_row__JEU_X > .highlightedwork_description__70r3e {
+    width: 100%; /* Make the description take full width */
+    height: auto; /* Allow description height to adjust based on content */
+    margin-left: 1rem;
+  }
+
+  .highlightedwork_inputField__0cR9K:checked + label {
+    width: 100%; /* Full width for checked label on smaller screens */
+    height: 400px;
+    cursor: grabbing;
+    transition: height 1s cubic-bezier(0.28, -0.03, 0, 0.99);
+    transition: height 1s ease;
+  }
+
+  .highlightedwork_card__X3YOG[for="c1"],
+  .highlightedwork_card__X3YOG[for="c2"],
+  .highlightedwork_card__X3YOG[for="c3"],
+  .highlightedwork_card__X3YOG[for="c4"] {
+    background-size: cover;
+  }
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/styles/projectsection.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+/* PATH: src/styles/projectsection.css */
+
+.mainProject {
+  background-color: aquamarine;
+  border: 1px solid black;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  position: relative;
+  /* padding: 10px; */
+}
+
+.mainProject > section {
+  width: 50%;
+  height: 100%;
+  max-height: 100vh;
+}
+
+.mainProject .ProjectImgSide {
+  border: 1px solid blue;
+  position: relative; /*for the video to have absolute position*/
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* padding: 20px 0px; */
+  /* overflow: hidden; */
+}
+
+.mediaWrapper {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: pink;
+  padding: 2rem;
+  /* border-top-right-radius: 4rem;
+  border-top-left-radius: 4rem;
+  border-bottom-right-radius: 4rem; */
+}
+
+.mainProject .ProjectImgSide video {
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain; /* Ensures the video maintains its aspect ratio */
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  /* border: 1px solid purple; */
+  margin: 20px;
+}
+
+.mainProject .ProjectTextSide {
+  border: 1px solid red;
+}
+
+/* radius for larger screens */
+@media screen and (min-width: 1200px){
+  .mainProject .ProjectImgSide video {
+    border-top-left-radius: 6rem;
+    border-top-right-radius: 6rem;
+    border-bottom-right-radius: 6rem;
+  }
+}
+
+/* styles for smaller screens */
+
+@media screen and (max-width: 700px) {
+  .mainProject {
+    flex-direction: column;
+  }
+
+  .mainProject > section {
+    width: 100%;
+    height: 50%;
+  }
+
+  .mainProject .ProjectImgSide {
+    order: 2; /* Move video section to bottom */
+    height: 50%;
+    /* display: flex;
+    justify-content: center;
+    align-items: start; */
+    padding: 0px 20px;
+  }
+
+  .mainProject .ProjectTextSide {
+    order: 1; /* Move text section to top */
+    height: 50%;
+  }
+  .mainProject .ProjectImgSide video {
+    /* object-fit: contain; Ensures video covers the container */
+    width: auto;
+    max-height: 100%;
+    border-top-right-radius: 4rem;
+    border-top-left-radius: 4rem;
+    /* border-bottom-right-radius: 0px; */
   }
 }
 
