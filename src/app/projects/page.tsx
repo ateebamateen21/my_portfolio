@@ -3,8 +3,8 @@ import { ProjectSection } from "@/components";
 function ProjectsPage() {
   return (
     <>
-      <ProjectSection />
-      <ProjectSection />
+      <ProjectSection videoSrc="/elsa_mockup.mp4" />
+      <ProjectSection videoSrc="/elsa_mockup.mp4" />
     </>
   );
 }

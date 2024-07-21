@@ -50,6 +50,16 @@
   border-bottom-right-radius: 4rem;
   /* border: 1px solid purple; */
   margin: 20px;
+  transition: transform 1s ease; /* Add transition for scaling */
+  transform-origin: left bottom; /* Start scaling from the bottom-left corner */
+  transform: scale(0.5); /* Initial smaller scale */
+  opacity: 0; /* Start with opacity 0 for fading effect */
+}
+
+.mainProject .ProjectImgSide video.in-view{
+  transform: scale(1); /* Scale to full size when in view */
+  opacity: 1; /* Fade in when in view */
+
 }
 
 .mainProject .ProjectTextSide {
