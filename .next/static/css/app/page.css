@@ -1,3 +1,119 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/styles/projectsection.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+/* PATH: src/styles/projectsection.css */
+
+.mainProject {
+  background-color: aquamarine;
+  border: 1px solid black;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  position: relative;
+  /* padding: 10px; */
+}
+
+.mainProject > section {
+  width: 50%;
+  height: 100%;
+  max-height: 100vh;
+}
+
+.mainProject .ProjectImgSide {
+  border: 1px solid blue;
+  position: relative; /*for the video to have absolute position*/
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* padding: 20px 0px; */
+  /* overflow: hidden; */
+}
+
+.mediaWrapper {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: pink;
+  padding: 2rem;
+  /* border-top-right-radius: 4rem;
+  border-top-left-radius: 4rem;
+  border-bottom-right-radius: 4rem; */
+}
+
+.mainProject .ProjectImgSide video {
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain; /* Ensures the video maintains its aspect ratio */
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  /* border: 1px solid purple; */
+  margin: 20px;
+  transition: transform 1s ease; /* Add transition for scaling */
+  transform-origin: left bottom; /* Start scaling from the bottom-left corner */
+  transform: scale(0.5); /* Initial smaller scale */
+  opacity: 0; /* Start with opacity 0 for fading effect */
+}
+
+.mainProject .ProjectImgSide video.in-view{
+  transform: scale(1); /* Scale to full size when in view */
+  opacity: 1; /* Fade in when in view */
+
+}
+
+.mainProject .ProjectTextSide {
+  border: 1px solid red;
+}
+
+/* radius for larger screens */
+@media screen and (min-width: 1200px){
+  .mainProject .ProjectImgSide video {
+    border-top-left-radius: 6rem;
+    border-top-right-radius: 6rem;
+    border-bottom-right-radius: 6rem;
+  }
+}
+
+/* styles for smaller screens */
+
+@media screen and (max-width: 700px) {
+  .mainProject {
+    flex-direction: column;
+  }
+
+  .mainProject > section {
+    width: 100%;
+    height: 50%;
+  }
+
+  .mainProject .ProjectImgSide {
+    order: 2; /* Move video section to bottom */
+    height: 50%;
+    /* display: flex;
+    justify-content: center;
+    align-items: start; */
+    padding: 0px 20px;
+  }
+
+  .mainProject .ProjectTextSide {
+    order: 1; /* Move text section to top */
+    height: 50%;
+  }
+  .mainProject .ProjectImgSide video {
+    /* object-fit: contain; Ensures video covers the container */
+    width: auto;
+    max-height: 100%;
+    border-top-right-radius: 4rem;
+    border-top-left-radius: 4rem;
+    /* border-bottom-right-radius: 0px; */
+  }
+}
+
 /*!********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/styles/globals.css ***!
   \********************************************************************************************************************************************************************************************************************************************************************/
